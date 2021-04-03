@@ -1,0 +1,55 @@
+==============================
+命名規則
+ok         
+英数字 $ _          
+
+NG
+let my-name
+let 0price
+===================================
+let price = 500
+price = pricee + 100
+price += 100;
+===================================
+const signal = 'pink';
+
+// if (signal === 'red') {
+//   console.log('stop!');
+// } else if (signal === 'yellow') {
+//   console.log('caution');
+// } else if (signal === 'blue') {
+//   console.log('go');
+// }
+
+switch (signal) {
+  case 'red':
+    console.log('stop');
+    break;
+    case 'yellow':
+    console.log('caution');
+    break;
+    case 'blue':
+    case 'green':
+    console.log('go');
+    break;
+    default:
+      console.log('wrong signal');
+      break;
+}
+=============================================
+for (let i = 1; i <= 10; i++) {
+  console.log(`hello ${i}`);
+}
+=============================================
+
+let hp = -50
+
+ do  {
+  console.log(`${hp} HP left`);
+  hp -= 15;
+} while (hp > 0)
+
+================================
+const double = a => a * 2;
+console.log(double(13))
+=================================
