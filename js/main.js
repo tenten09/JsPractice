@@ -1,12 +1,20 @@
 'use strict';
 
 { 
-  const scores = [80, 90, 40, 70];
-  // console.log(`Score: ${scores[0]}`);
-  // console.log(`Score: ${scores[1]}`);
-  // console.log(`Score: ${scores[2]}`);
+ const point = {
+   x: 100,
+   y: 190,
+ };
+  
+ const keys = Object.keys(point);
+ keys.forEach(key => {
+    console.log(`key: ${key} Value: ${point[key]}`)
+ });
 
-  for (let i = 0; i < scores.length; i++) {
-    console.log(`Score ${i}: ${scores[i]}`);
-  }
+ const points = [
+   {x: 30, y: 20},
+   {x: 20, y: 30},
+   {x: 40, y: 60},
+ ];
+ console.log(points[1].y);
 }
