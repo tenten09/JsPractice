@@ -1,20 +1,9 @@
 'use strict';
 
-{ 
- const point = {
-   x: 100,
-   y: 190,
- };
-  
- const keys = Object.keys(point);
- keys.forEach(key => {
-    console.log(`key: ${key} Value: ${point[key]}`)
- });
-
- const points = [
-   {x: 30, y: 20},
-   {x: 20, y: 30},
-   {x: 40, y: 60},
- ];
- console.log(points[1].y);
+{
+  const d = new Date(2019, 10);
+  d.setHours(10, 20, 30);
+  d.setDate(31);
+  d.setDate(d.getDate() + 3);
+  console.log(d);
 }
