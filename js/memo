@@ -126,3 +126,50 @@ const avg = sum / scores.length;
   d.setDate(d.getDate() + 3);
   console.log(d);
   ==============================================
+  //  alert("hello");
+const answer = confirm("削除しますか？");
+if (answer) {
+  alert("削除しました。")
+} else {
+  alert("キャンセルしました");
+}
+===============================================
+let i = 0;
+ function showTime() {
+   console.log(new Date());
+   i ++;
+   if(i > 2) {
+     clearInterval(intervalId);
+   }
+ }
+ const intervalId = setInterval(showTime, 1000);
+=================================================
+setTimeout(showTime, 1000);
+一回のみ実行
+================================================
+setIntervalは同じ時間感覚で実行されるため、処理が重なる可能性あり、
+setTimeoutは処理は重ならない
+=================================================
+例外処理
+ try {
+    console.log(name.toUpperCase());
+  } catch (e) { エラーが起こった際の処理
+    console.log(e);
+  }
+  =================================================
+  クラス作成
+  class Post {
+    constructor(text) {
+      this.text = text;
+      this.likeCount = 0;
+    }
+
+    show() {
+      console.log(`${this.text} -${this.likeCount}いいね`);
+    }
+  }
+  const posts = [
+    new Post("js勉強中"),
+    new Post("js楽しい！！"),
+  ];
+  ==========================================================-

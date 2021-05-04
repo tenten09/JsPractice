@@ -1,9 +1,21 @@
 'use strict';
 
 {
-  const d = new Date(2019, 10);
-  d.setHours(10, 20, 30);
-  d.setDate(31);
-  d.setDate(d.getDate() + 3);
-  console.log(d);
-}
+  class Post {
+    constructor(text) {
+      this.text = text;
+      this.likeCount = 0;
+    }
+
+    show() {
+      console.log(`${this.text} -${this.likeCount}いいね`);
+    }
+  }
+  const posts = [
+    new Post("js勉強中"),
+    new Post("js楽しい！！"),
+  ];
+
+  posts[0].show();
+  posts[1].show();
+} 
