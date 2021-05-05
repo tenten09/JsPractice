@@ -1,9 +1,7 @@
-'use strict';
-
-{
-  function update() {
+要素取得
+function update() {
     document.querySelector('#target').textContent = 'changed';
     document.getElementById('target').textContent = 'changed';
   }
   setTimeout(update, 1000);
-}
+  ================================================================
