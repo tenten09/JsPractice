@@ -5,3 +5,35 @@ function update() {
   }
   setTimeout(update, 1000);
   ================================================================
+  指定要素のpタグを変更
+  document.querySelectorAll("p")[1].textContent = 'changed';
+    document.querySelectorAll("p").forEach((p, index) => {
+      p.textContent = `${index}番目のpです`;
+    })
+    ===============================================================
+    interactive
+    document.querySelector('button').addEventListener('click', () => {
+    document.getElementById('target').textContent = 'changed!!';
+  });
+  =================================================================
+  タイトル属性
+  const targetNode = document.getElementById('target')
+    targetNode.textContent = 'changed!!';
+    targetNode.title = 'This is title!!!!!!';
+  ================================================================
+  classList.add
+  classList.contains
+  classList.toggle
+  
+  document.querySelector('button').addEventListener('click', () => {
+    const targetNode = document.getElementById('target')
+
+    // targetNode.classList.add('my-color');
+  //  if (targetNode.classList.contains('my-color') === true) {
+  //    targetNode.classList.remove('my-color');
+  //  } else {
+  //    targetNode.classList.add('my-color');
+  //  }
+  targetNode.classList.toggle('my-color');
+  });
+  =================================================================

@@ -1,9 +1,15 @@
 'use strict';
 
 {
-  function update() {
-    document.querySelector('#target').textContent = 'changed';
-    document.getElementById('target').textContent = 'changed';
-  }
-  setTimeout(update, 1000);
+  document.querySelector('button').addEventListener('click', () => {
+    const targetNode = document.getElementById('target')
+
+    // targetNode.classList.add('my-color');
+  //  if (targetNode.classList.contains('my-color') === true) {
+  //    targetNode.classList.remove('my-color');
+  //  } else {
+  //    targetNode.classList.add('my-color');
+  //  }
+  targetNode.classList.toggle('my-color');
+  });
 }
